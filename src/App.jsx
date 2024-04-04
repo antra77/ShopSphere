@@ -4,16 +4,20 @@ import Home from "./components/Home";
 import Details from "./components/Details";
 import Create from "./components/Create";
 import Edit from "./components/Edit";
+import TopNav from "./components/TopNav";
+import './App.css'
 
 const App = () => {
   const { search, pathname } = useLocation();
   return (
-    <div className="h-screen w-screen flex">
+    <div className="main flex flex-col">
+      <TopNav/>
+    <div className="w-full flex ">
 
       {/* homepage functionality */}
       
       {(pathname != "/" || search.length > 0) && (
-        <Link to="/" className="text-yellow-700 font-bold absolute left-[17%] top-[3%] border border-yellow-600 p-2 rounded-full bg-yellow-200">
+        <Link to="/" className="text-zinc-700 font-bold absolute right-[5%] top-[2%] p-3 rounded-full bg-blue-200">
           Home
         </Link>
       )}
@@ -26,7 +30,7 @@ const App = () => {
         <Route path="/details/:id" element={<Details />} />
         <Route path="/edit/:id" element={<Edit />} />
       </Routes>
-    </div>
+    </div></div>
   );
 };
 

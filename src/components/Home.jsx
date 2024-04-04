@@ -42,7 +42,7 @@ const Home = () => {
             <Link
               key={p.id}
               to={`/details/${p.id}`}
-              className="mr-3 mb-3 card p3 border shadow rounded w-[18%] h-[30vh] flex flex-col justify-center items-center"
+              className="mr-3 mb-3 card p3 border shadow rounded-xl w-[18%] h-[30vh] flex flex-col justify-center items-center"
             >
               <div
                 className="hover:scale-110 mb-3 w-full h-[80%] bg-contain bg-no-repeat bg-center"
