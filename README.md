@@ -20,7 +20,7 @@ Welcome to ShopSphere, an e-commerce website built using Vite, Tailwind CSS, Rea
 
 ## Preview
 
-![ShopSphere Preview](/shopsphere.png)
+![ShopSphere Preview](/public/shopsphere.png)
 
 ## Live Website
 
